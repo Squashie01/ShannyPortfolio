@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Shanny's Website - Projects </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="getProjects()">
+
+        <div id="container">
+
+            <div id="navbar">
+                <nav class="navbar">
+                    <div class="logo"> <strong> SHANNY </strong> </div>
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+        
+                    <ul class="mainMenu">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="projects.html" class="active"> Projects </a></li>
+                        <li><a href="about.html"> About Me </a></li>
+                        <li><a href="contact.html"> Contact Me </a></li>
+                        <li> <i class="fas fa-moon" id="darkmodeButton"></i> </li>
+                        <a href="../files/Shanny_Singh_Resume.pdf" class="button1"> <button> View Resume </button> </a>
+        
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
+                        <span class="icons">
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github"></i>
+                        </span>
+                    </ul>
+                </nav>
+
+                <script>
+                    let darkMode = localStorage.getItem('darkMode'); 
+                    const darkModeButton = document.querySelector('#darkmodeButton');
+
+                    const enableDarkMode = () => {
+                        document.body.classList.add('darkMode-Theme');
+                        localStorage.setItem('darkMode', 'enabled');
+                    }
+
+                    const disableDarkMode = () => {
+                        document.body.classList.remove('darkMode-Theme');
+                        localStorage.setItem('darkMode', null);
+                    }
+                    
+                    if (darkMode === 'enabled') 
+                    {
+                        enableDarkMode();
+                    }
+
+                    darkModeButton.addEventListener('click', () => {
+                        
+                        darkMode = localStorage.getItem('darkMode'); 
+
+                        if (darkMode !== 'enabled') 
+                        {
+                            enableDarkMode();  
+                        } 
+                        else 
+                        {  
+                            disableDarkMode(); 
+                        }
+                    });
+                </script>
+            </div>
+
+            <div>
+                <div class="main-header">
+                    <h1> My Projects </h1>
+                </div>
+
+                <div class="projects">
+                    <div class="project1">
+                        <div class="project-info">
+                            <h3> Lorem ipsum, dolor </h3>
+                            <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Facilis, laborum. Vel, sed delectus sunt dignissimos suscipit 
+                                saepe fuga voluptatum enim repellendus, optio rem, aspernatur 
+                                impedit ad atque odio non adipisci. 
+                            </span>
+                            <button class="vist-website"> Visit Website </button>
+                        </div>
+                        <div class="project-img">
+                            <img src="../images/Capture1.PNG" alt="">
+                        </div>
+                    </div>
+
+                    <div class="horizontal-Line"></div>
+
+
+                    <div class="project2">
+                        <div class="project-img">
+                            <img src="../images/Capture1.PNG" alt="">
+                        </div>
+                        <div class="project-info">
+                            <h3> Lorem ipsum, dolor </h3>
+                            <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Facilis, laborum. Vel, sed delectus sunt dignissimos suscipit 
+                                saepe fuga voluptatum enim repellendus, optio rem, aspernatur 
+                                impedit ad atque odio non adipisci. 
+                            </span>
+                            <a href=""> <button class="vist-website"> Visit Website </button> </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="up-button">
+                    <a href="#navbar"> <i class="fas fa-chevron-up"></i> </a>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./javascript.js"></script>
+        
+    </body>
+</html>

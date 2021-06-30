@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root
+{
+    --background-color: whiteSmoke;
+    --headerBackground: white;
+    --headerColor: #11121A;
+    --purple: #9359ea;
+    --text: #96939B;
+    --button-border: #9359ea;
+    --boxShadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+.darkMode-Theme
+{
+    --background-color: #11121A;
+    --headerBackground: #1C1C24;
+    --headerColor: whiteSmoke;
+    --text: #96939B;
+    --button-border: #11121A;
+}
+
+body
+{
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text);
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Varela Round';
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* Up Button CSS */
+
+.up-button
+{
+    background-color: var(--purple);
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 35px;
+}
+
+.up-button a
+{
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.horizontal-Line
+{
+    width: 50%;
+    height: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    opacity: 30%;
+    border-bottom: 5px solid var(--purple);
+}
+
+
+
+/* Navbar CSS */
+
+nav 
+{
+    width: 100%;
+    color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--headerBackground);
+    box-shadow: var(--boxShadow);
+    margin-top: 0px;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+.mainMenu ul
+{
+    display: flex;
+    padding-right: 30px;
+}
+
+.mainMenu ul li
+{
+    list-style: none;
+}
+
+.mainMenu li a {
+    text-decoration: none;
+    color: var(--purple);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.mainMenu li
+{
+    margin: 30px 25px;
+}
+
+.mainMenu li a:hover
+{
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--purple);
+}
+
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+
+nav .logo {
+    margin: 10px 0px;
+    padding-left: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.active
+{
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--purple);
+}
+
+
+/* Mid Secetion Style */
+
+.mid
+{
+    margin-top: 5%;
+}
+
+.intro
+{
+    float: left;
+    margin-left: 10%;
+    height: 50vh;
+    width: 45%;
+    color: var(--purple);
+    padding-top: 6%;
+}
+
+.monitor
+{
+    float: right;
+    margin-right: 10%;
+    height: 50vh;
+    width: 35%;
+}
+
+.waveEmoji
+{
+    height: 4em;
+    width: 4em;
+}
+
+.nameIntro
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.nameIntro h1
+{
+    font-size: 50px;
+    padding-right: 30px;
+}
+
+.pIntro
+{
+    text-align: left;
+    width: 75%;
+    color: var(--text);
+}
+
+.socialLinks
+{
+    height: 4em;
+    width: 4em;
+}
+
+.monitorImg
+{
+    height: 25em;
+    width: 25em;
+    float: right;
+}
+
+.buttons
+{
+    width: 22em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button
+{
+    height: 3em;
+    width: 9em;
+    font-size: 17px;
+    color: #fff;
+    background-color: var(--purple);
+    border-radius: 25px;
+    border: none;
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+button:hover
+{
+    border: 2px solid var(--button-border);
+    background-color: whitesmoke;
+    color: var(--purple);
+}
+
+.button1
+{
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: -1%;
+}
+
+.button2
+{
+    margin-left: 30px;
+}
+
+
+
+
+
+
+/* Contact Page CSS */
+
+.Contact-Me .socialLinksIntro
+{
+    display: flex;
+    justify-content: center;
+}
+
+.other-info
+{
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
+.email, .phone
+{
+    display: flex;
+    margin-top: 50px;
+}
+
+.other-info i
+{
+    font-size: 60px;
+    margin-right: 25px;
+    color: var(--purple);
+}
+
+.other-info p
+{
+    font-size: 30px;
+}
+
+.phone .phoneNumber, .email .emailAddress
+{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Main Header - My Projects CSS */
+
+.main-header
+{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.main-header h1
+{
+    font-size: 50px;
+    color: var(--purple);
+}
+
+
+
+/* Project CSS */
+
+.project1, .project2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.project-info
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.project-info h3
+{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 17px;
+    color: var(--headerColor);
+}
+
+.project-info span
+{
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: var(--text);
+}
+
+.project-img
+{
+    width: 40%;
+    height: 30vh;
+    height: auto;
+    box-shadow: var(--boxShadow);
+}
+
+.project-img img
+{
+    width: 100%;
+}
+
+.project-info .vist-website
+{
+    height: 3em;
+    width: 9em;
+    font-size: 17px;
+    color: #fff;
+    background-color: var(--purple);
+    border-radius: 25px;
+    border: none;
+    margin-top: 25px;
+}
+
+
+
+/* About Me Page */
+
+.About-Me
+{
+    display: flex;
+}
+
+.About-Me-Img
+{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.About-Me-Img img
+{
+    width: 50%;
+    border-radius: 300px;
+}
+
+.About-Me-Paragraph
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.About-Me-Paragraph span
+{
+    font-size: 15px;
+}
+
+.About-Me-Paragraph span a
+{
+    color: var(--purple);
+}
+
+
+@media screen and (max-width: 1140px)
+{
+    nav
+    {
+        padding: 30px 30px;
+    }
+
+    nav .mainMenu 
+    {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--background-color);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu li a, nav .mainMenu i
+    {
+        font-size: 50px;
+    }
+
+    nav a.button1
+    {
+        margin-top: -20%;
+        margin-bottom: 7%;
+    }
+
+    nav .logo
+    {
+        font-size: 50px;
+    }
+
+    nav .mainMenu .closeMenu 
+    {
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 80px;
+    }
+
+    nav .closeMenu i
+    {
+        font-size: 75px;
+    }
+
+    nav .openMenu {
+        display: block;
+        font-size: 75px;
+        margin-right: 20px;
+    }
+    
+    .icons i {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    /* Mid stuff */
+
+    .mid
+    {
+        flex-direction: column;
+    }
+
+    .intro
+    {
+        height: 40vh;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .monitor
+    {
+        width: 100%;
+        height: 25em;
+        margin-right: 0px;
+    }
+
+    .nameIntro
+    {
+        justify-content: center;
+    }
+
+    .nameIntro h1
+    {
+        font-size: 5em;
+    }
+
+    .waveEmoji
+    {
+        height: 5em;
+        width: 5em;
+    }
+
+    .pIntro
+    {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3em;
+        margin-top: 7%;
+    }
+
+    .socialLinks
+    {
+        height: 10em;
+        width: 10em;
+    }
+
+    .socialLinksIntro
+    {
+        width: 21em;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .monitorImg
+    {
+        margin-right: 30%;
+        margin-top: 10%;
+    }
+    .buttons
+    {
+        width: 47.5em;
+    }
+
+    button
+    {
+        font-size: 2.5em;
+        border-radius: 25em;
+        margin-top: 7em;
+    }
+
+
+    /* Project CSS */
+
+    .main-header h1
+    {
+        font-size: 75px;
+        margin-bottom: 50px;
+    }
+
+    .project1, .project2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .project1
+    {
+        flex-direction: column-reverse;
+    }
+
+    .project-info
+    {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+
+    .project-info h3
+    {
+        font-size: 55px;
+        margin-bottom: 17px;
+        color: var(--headerColor);
+    }
+
+    .project-info span
+    {
+        font-size: 45px;
+        margin-bottom: 25px;
+        color: var(--text);
+    }
+
+    .project-img
+    {
+        width: 85%;
+        height: 30vh;
+        height: auto;
+        box-shadow: var(--boxShadow);
+    }
+
+    .project-img img
+    {
+        width: 100%;
+    }
+
+    .project-info .vist-website
+    {
+        height: 3em;
+        width: 9em;
+        font-size: 40px;
+        color: #fff;
+        background-color: var(--purple);
+        border-radius: 300px;
+        border: none;
+        margin-top: 50px;
+    }
+
+
+    /* About Me Page */
+
+    .About-Me
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About-Me-Img
+    {
+        width: 75%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .About-Me-Img img
+    {
+        width: 50%;
+        border-radius: 300px;
+    }
+
+    .About-Me-Paragraph
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin-top: 50px;
+    }
+
+    .About-Me-Paragraph span
+    {
+        font-size: 15px;
+    }
+
+    .About-Me-Paragraph span a
+    {
+        color: var(--purple);
+    }
+
+    /* Contact Page CSS */
+    .other-info
+    {
+        display: flex;
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        margin: 0 auto;
+    }
+
+    .email, .phone
+    {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .other-info i
+    {
+        font-size: 60px;
+        margin-right: 25px;
+        color: var(--purple);
+    }
+
+    .other-info p
+    {
+        font-size: 30px;
+    }
+
+    .phone .phoneNumber, .email .emailAddress
+    {
+        display: flex;
+        align-items: center;
+    }
+}

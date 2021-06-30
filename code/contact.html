@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Shanny's Website - Contact </title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <div id="containter">
+
+            <div id="navbar">
+                <nav class="navbar">
+                    <div class="logo"> <strong> SHANNY </strong> </div>
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+        
+                    <ul class="mainMenu">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="projects.html"> Projects </a></li>
+                        <li><a href="about.html"> About Me </a></li>
+                        <li><a href="contact.html" class="active"> Contact Me </a></li>
+                        <li> <i class="fas fa-moon" id="darkmodeButton"></i> </li>
+                        <a href="../files/Shanny_Singh_Resume.pdf" class="button1"> <button> View Resume </button> </a>
+        
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
+                        <span class="icons">
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github"></i>
+                        </span>
+                    </ul>
+                </nav>
+
+                <script>
+                    let darkMode = localStorage.getItem('darkMode'); 
+                    const darkModeButton = document.querySelector('#darkmodeButton');
+
+                    const enableDarkMode = () => {
+                        document.body.classList.add('darkMode-Theme');
+                        localStorage.setItem('darkMode', 'enabled');
+                    }
+
+                    const disableDarkMode = () => {
+                        document.body.classList.remove('darkMode-Theme');
+                        localStorage.setItem('darkMode', null);
+                    }
+                    
+                    if (darkMode === 'enabled') 
+                    {
+                        enableDarkMode();
+                    }
+
+                    darkModeButton.addEventListener('click', () => {
+                        
+                        darkMode = localStorage.getItem('darkMode'); 
+
+                        if (darkMode !== 'enabled') 
+                        {
+                            enableDarkMode();  
+                        } 
+                        else 
+                        {  
+                            disableDarkMode(); 
+                        }
+                    });
+                </script>
+            </div>
+
+            <div class="main-header">
+                <h1> Get In Touch </h1>
+            </div>
+
+            <div class="Contact-Me">
+                <div class="socialLinksIntro">
+                    <a href="https://bb.linkedin.com/in/shanny-singh-a549a4208">
+                        <img src="../images/linkedin-logo.png" alt="linkedin-logo" class="socialLinks">
+                    </a>
+
+                    <a href="https://github.com/Squashie01">
+                        <img src="../images/github-logo.png" alt="github-logo" class="socialLinks">
+                    </a>
+                </div>
+
+                <div class="other-info">
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <p class="emailAddress"> shanny12381@gmail.com </p>
+                    </div>
+                    
+                    <div class="phone">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p class="phoneNumber"> +1-246-238-8419 </p>
+                    </div>
+                </div>
+            </div>        
+
+        </div>
+
+        <script src="./javascript.js"></script>
+        
+    </body>
+</html>
