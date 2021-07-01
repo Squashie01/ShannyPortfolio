@@ -71,7 +71,6 @@ function showProjects(data){
     }
 
     projectsContainer.innerHTML = projectsHTML;
-    console.log(projectsHTML);
 }
 
 getProjects().then(data => {

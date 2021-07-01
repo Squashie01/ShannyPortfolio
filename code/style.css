@@ -571,6 +571,11 @@ button:hover
         margin-top: 7em;
     }
 
+    nav a.button1
+    {
+        margin-top: 0px;
+    }
+
 
     /* Project CSS */
 
