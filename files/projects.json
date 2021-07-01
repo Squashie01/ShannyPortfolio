@@ -16,7 +16,7 @@
     {   "id": "3",
         "title": "Recipees",
         "description": "This is a website where you can find yummy Recipes with a working search bar. It also has a working dark mode option and its mobile friendly.",
-        "image": "../images/Capture1.PNG",
+        "image": "../images/Recipees.jpg",
         "url": "https://squashie01.github.io/Recipees/"
     }
 ]
