@@ -11,5 +11,12 @@
         "description": "This is a tic tac toe game that I made",
         "image": "../images/lightModeTicTacToe.jpg",
         "url": "https://squashie01.github.io/TicTacToe/"
+    },
+
+    {   "id": "3",
+        "title": "Recipees",
+        "description": "This is a website where you can find yummy Recipes with a working search bar. It also has a working dark mode option and its mobile friendly.",
+        "image": "../images/Capture1.png",
+        "url": "https://squashie01.github.io/Recipees/"
     }
 ]

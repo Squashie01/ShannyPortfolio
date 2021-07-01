@@ -50,7 +50,8 @@ function showProjects(data){
             '<div class="project-img">' +
             '<img src="' + data[i].image + '" alt="">' +
             '</div>' +
-            '</div>';
+            '</div>' +
+            '<div class="horizontal-Line"></div>';
         }
 
         else
