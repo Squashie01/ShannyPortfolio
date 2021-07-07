@@ -1,22 +1,47 @@
 [
     {   "id": "1",
         "title": "My Cafe",
-        "description": "This was a project I made during a five day boot camp.",
+        "description": "This was a project I made during a five day bootcamp to show off my skills. 😎",
         "image": "../images/lightModeMyCafe.jpg",
-        "url": "https://squashie01.github.io/MyCafe/"
+        "url": "<a href='https://squashie01.github.io/MyCafe/'> <button class='vist-website'> Visit Website </button> </a>"
     },
 
     {   "id": "2",
         "title": "Tic Tac Toe",
-        "description": "This is a tic tac toe game that I made",
+        "description": "This is a Tic Tac Toe game which was orginally created by ... and I made a clone of it.",
         "image": "../images/lightModeTicTacToe.jpg",
-        "url": "https://squashie01.github.io/TicTacToe/"
+        "url": "<a href='https://squashie01.github.io/TicTacToe/'> <button class='vist-website'> Visit Website </button> </a>"
     },
 
     {   "id": "3",
         "title": "Recipees",
-        "description": "This is a website where you can find yummy Recipes with a working search bar. It also has a working dark mode option and its mobile friendly.",
+        "description": "This is a website where you can find yummy Recipes. <br> It has: <br> <ul>  <li> A working search bar </li> <li> Dark mode </li> <li> Working buttons </li> <li> Moible view </li> </ul>",
         "image": "../images/Recipees.jpg",
-        "url": "https://squashie01.github.io/Recipees/"
+        "url": "<a href='https://squashie01.github.io/Recipees/'> <button class='vist-website'> Visit Website </button> </a>"
+    },
+
+    {   "id": "4",
+        "title": "Starbucks Clone",
+        "description": "This is a clone of Starbucks website. However, the buttons and links do not work.",
+        "image": "../images/starbucks.png",
+        "url": ""
+
+    },
+
+    {   "id": "5",
+        "title": "Shopping List",
+        "description": "This is a shopping list app where the user can Add Items, Remove All Items, View Items in the List, Calulate the cost of one of each item on the shopping list, Search for Items in the Shopping List and change the username in the Settings.",
+        "image": "../images/project1.png",
+        "url": ""
+    },
+
+    {   "id": "6",
+        "title": "Ezier Note",
+        "description": "Ezier Note was created to make note taking Ezier.",
+        "image": "../images/project2.png",
+        "url": ""
     }
+
+
+
 ]

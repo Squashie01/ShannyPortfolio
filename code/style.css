@@ -359,6 +359,11 @@ button:hover
     color: var(--text);
 }
 
+.project-info ul
+{
+    margin-left: 15px;
+}
+
 .project-img
 {
     width: 40%;

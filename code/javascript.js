@@ -45,7 +45,7 @@ function showProjects(data){
             '<div class="project-info">' +
             '<h3>' + data[i].title + '</h3>' +
             '<span>' + data[i].description + '</span>' +
-            '<a href="' + data[i].url + '"> <button class="vist-website"> Visit Website </button> </a>' +
+            data[i].url +
             '</div>' +
             '<div class="project-img">' +
             '<img src="' + data[i].image + '" alt="">' +
@@ -64,7 +64,7 @@ function showProjects(data){
             '<div class="project-info">' +
             '<h3>' + data[i].title + '</h3>' +
             '<span>' + data[i].description + '</span>' +
-            '<a href="' + data[i].url + '"> <button class="vist-website"> Visit Website </button> </a>' +
+            data[i].url +
             '</div>' +
             '</div>' +
             '<div class="horizontal-Line"></div>';
