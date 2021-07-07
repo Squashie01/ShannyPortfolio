@@ -30,14 +30,14 @@
 
     {   "id": "5",
         "title": "Shopping List",
-        "description": "This is a shopping list app where the user can Add Items, Remove All Items, View Items in the List, Calulate the cost of one of each item on the shopping list, Search for Items in the Shopping List and change the username in the Settings.",
+        "description": "This is a shopping list app where the user can Add Items, Remove All Items, View Items in the List, Calulate the cost of one of each item on the shopping list, Search for Items in the Shopping List and change the username in the Settings. <br> <br> Created by: <a href='https://squashie01.github.io/ShannyPortfolio/'> Shanny Singh </a> &#38; <a href='https://lukegreenidgeportfolio.000webhostapp.com/'> Luke Greenidge </a>",
         "image": "../images/project1.png",
         "url": ""
     },
 
     {   "id": "6",
         "title": "Ezier Note",
-        "description": "Ezier Note was created to make note taking Ezier.",
+        "description": "Ezier Note was created to make note taking Ezier. <br> <br> Created by: <a href='https://squashie01.github.io/ShannyPortfolio/'> Shanny Singh </a> &#38; <a href='https://lukegreenidgeportfolio.000webhostapp.com/'> Luke Greenidge </a>",
         "image": "../images/project2.png",
         "url": ""
     }

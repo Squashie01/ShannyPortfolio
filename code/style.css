@@ -364,6 +364,11 @@ button:hover
     margin-left: 15px;
 }
 
+.project-info a
+{
+    color: var(--purple);
+}
+
 .project-img
 {
     width: 40%;
