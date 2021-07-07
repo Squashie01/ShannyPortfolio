@@ -15,7 +15,7 @@
 
     {   "id": "3",
         "title": "Recipees",
-        "description": "This is a website where you can find yummy Recipes. <br> It has: <br> <ul>  <li> A working search bar </li> <li> Dark mode </li> <li> Working buttons </li> <li> Moible view </li> </ul>",
+        "description": "This is a website where you can find yummy Recipes. <br> <br> It has: <br> <ul>  <li> A working search bar </li> <li> Dark mode </li> <li> Working buttons </li> <li> Moible view </li> </ul>",
         "image": "../images/Recipees.jpg",
         "url": "<a href='https://squashie01.github.io/Recipees/'> <button class='vist-website'> Visit Website </button> </a>"
     },
