@@ -220,10 +220,15 @@ nav .logo {
     color: var(--text);
 }
 
+.socialLinksIntro .socialLinks:first-child
+{
+    margin-right: 5%;
+}
+
 .socialLinks
 {
-    height: 4em;
-    width: 4em;
+    color: var(--purple);
+    font-size: 50px;
 }
 
 .monitorImg
@@ -531,7 +536,7 @@ button:hover
 
     .monitor
     {
-        width: 50%;
+        width: 55%;
         height: 20vh;
         margin-right: auto;
         margin-left: auto;
@@ -586,8 +591,12 @@ button:hover
     {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 70px;
     }
 
     .buttons
