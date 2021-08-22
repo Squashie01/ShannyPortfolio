@@ -767,3 +767,11 @@ button:hover
         align-items: center;
     }
 }
+
+@media screen and (max-width: 1140px)
+{
+    .monitor
+    {
+        width: 50%;
+    }
+}
