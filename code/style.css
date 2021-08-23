@@ -456,7 +456,7 @@ button:hover
 }
 
 
-@media screen and (max-width: 1140px)
+@media screen and (max-width: 1440px)
 {
     nav
     {
@@ -575,7 +575,7 @@ button:hover
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 3em;
+        font-size: 2.6em;
         margin-top: 7%;
     }
 
@@ -765,13 +765,5 @@ button:hover
     {
         display: flex;
         align-items: center;
-    }
-}
-
-@media screen and (max-width: 1140px)
-{
-    .monitor
-    {
-        width: 50%;
     }
 }
